@@ -68,7 +68,7 @@
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
 
-          <button class="main-button" type="button">Заказать услугу</button>
+          <button class="main-button" data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -414,6 +414,7 @@
 
     <footer class="footer-first">
       <div class="footer container">
+        <div class="footer-contacts">
         <a href="./index.html" class="webstudio-footer">
           Web<span class="studio-footer">Studio</span>
         </a>
@@ -438,11 +439,68 @@
       </div>
 
       <div class=footer-div>
+        <h2 class="h-footer">присоединяйтесь</h2>
+        <ul class="icons-ul-footer">
+          <li class="social-item-footer">
+            <a href="#" class="social-link instagram">
+              <svg class="social-icon">
+               <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
 
+          <li class="social-item-footer">
+            <a href="" class="social-link">
+              <svg class="social-icon">
+               <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item-footer">
+            <a href="" class="social-link">
+              <svg class="social-icon">
+               <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item-footer">
+            <a href="" class="social-link">
+              <svg class="social-icon">
+               <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+        </ul>
+      </div>
+
+
+    </div>
 
 
 
 
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="button-modal" data-modal-close type="button"> <svg class="icon-cross">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
