@@ -114,23 +114,25 @@ img {
 .header-phone{
   display: flex;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail{
   display: flex;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-phone:hover .phone-icon,
 .header-phone:focus .phone-icon{
   fill: var(--theme-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
 }
 .header-mail:hover .mail-icon,
 .header-mail:focus .mail-icon{
   fill: var(--theme-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 
 }
 
@@ -153,12 +155,52 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--theme-color);
+    display: block;
+    margin-top: 76px;
+    
+    
+  }
+
+  .current2::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--theme-color);
+    display: block;
+    margin-top: 76px;
+    
+    
+  }
+
+  .current-page{
+    color: var(--theme-color);
+    
+}
+
+.header-link.link.current-page {
+  color: var(--theme-color);
+}
   
   .header-link:hover,
   .header-link:focus {
     color: var(--theme-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 
 
@@ -191,18 +233,16 @@ color: var(--text-primary);
     text-align: left;
       
      color: var(--text-primary)
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }       
 .nav-link:hover,
 .nav-link:focus{
     color: var(--theme-color)
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }           
-.active-page{
-    color: var(--theme-color);
-    
-}
+
 
 
 .phone-icon{
@@ -210,6 +250,7 @@ color: var(--text-primary);
   height: 16px;
   fill: var(--text-secondary);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-icon{
@@ -217,6 +258,7 @@ color: var(--text-primary);
   height: 12px;
   fill: var(--text-secondary);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-phone,
@@ -230,6 +272,8 @@ color: var(--text-primary);
     text-align: left;
 
     color: var(--text-secondary)
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-phone:hover,
 .header-mail:hover,
@@ -237,7 +281,7 @@ color: var(--text-primary);
 .header-mail:focus{
 
     color: var(--theme-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .slogan{
    
@@ -271,12 +315,14 @@ left: 700px;
 top: 430px;
 border-radius: 4px;
 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .main-button:focus,
 .main-button:hover{
     background-color: #188CE8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .icon-antenna{
@@ -455,6 +501,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   width: 20px; 
   height: 20px;
   fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item{
@@ -482,18 +529,20 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   width: 100%;
   height: 100%;
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus{
   background-color: var(--theme-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
   fill:  #FFFFFF;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 
@@ -568,6 +617,7 @@ color: var(--text-primary);
   border: 1px solid #AFB1B8;
   align-items: center;
   justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .regular-icons{
@@ -583,6 +633,8 @@ width: 106px;
 height: 60px;
 fill: #AFB1B8;
 
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -591,18 +643,19 @@ display: flex;
 }
 
 
-.icon-1:hover,
-.icon-1:focus{
-fill: var(--theme-color);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 .regular-a:hover,
 .regular-a:focus{
 border-color: var(--theme-color);
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+
+.regular-a:hover .icon-1,
+.regular-a:focus .icon-1{
+fill: var(--theme-color);
+
+}
+
 
 
 
@@ -632,6 +685,8 @@ text-align: left;
 
 
 color: var(--theme-color);
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-footer{
@@ -649,7 +704,7 @@ color: #FFFFFF;
 .webstudio-footer:hover,
 .webstudio-footer:focus{
     color: var(--theme-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     
 }
 
@@ -663,6 +718,8 @@ letter-spacing: 0.03em;
 text-align: left;
 
 color: #FFFFFF;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -677,6 +734,8 @@ color: #FFFFFF;
     text-align: left;
 
     color: #FFFFFF99;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-map:hover,
@@ -686,7 +745,7 @@ color: #FFFFFF;
 .footer-mail:hover,
 .footer-mail:focus{
     color: var(--theme-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .footer-first{
@@ -816,6 +875,8 @@ background-color: #2F303A;
   
     color: var(--text-primary);
     background-color: #f5f4fa;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .buttons-partfolio:hover,
   .buttons-partfolio:focus {
@@ -824,7 +885,7 @@ background-color: #2F303A;
     border-color: var(--theme-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
   }
   
   .all-photos {
@@ -856,6 +917,8 @@ background-color: #2F303A;
   }
   .examples-list-link {
     display: block;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .examples-list {
     display: flex;
@@ -887,7 +950,7 @@ background-color: #2F303A;
   .examples-list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
   }
   
   .examples-list-item:nth-last-child(-n + 3) {
