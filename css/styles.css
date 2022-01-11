@@ -310,9 +310,11 @@ border-radius: 4px;
   background-color: #2F303A;
   background-image: url(../images/Imgback.jpg);
   max-width: 1600px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   
   
   background-image: linear-gradient(
@@ -323,6 +325,7 @@ border-radius: 4px;
       url(../images/Imgback.jpg);
   }
   
+
 
 
 .button-container{
@@ -763,6 +766,10 @@ background-color: #2F303A;
 .social-item-footer{
   width: 44px;
   height: 44px;
+  
+}
+
+.social-item-footer:not(:last-child){
   margin-right: 10px;
 }
 
@@ -817,8 +824,6 @@ background-color: #2F303A;
     border-color: var(--theme-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
